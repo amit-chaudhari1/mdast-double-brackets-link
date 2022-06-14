@@ -1,0 +1,36 @@
+{
+  "name": "mdast-double-brackets-link",
+  "version": "0.1.1",
+  "description": "Parse double brackets link in markdown",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "watch": "npm run build -- --watch",
+    "clean": "rm -rf lib",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "markdown",
+    "mdast-plugin",
+    "double brackets",
+    "wikilinks"
+  ],
+  "files": [
+    "lib"
+  ],
+  "author": "Amit Chaudhari",
+  "repository": {
+    "url": "https://github.com/amitchaudhari9121/mdast-double-brackets-link"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "slugify": "^1.5.3",
+    "unist-util-visit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "^3.0.4",
+    "@types/node": "^17.0.36"
+  }
+}
